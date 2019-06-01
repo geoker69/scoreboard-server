@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>Glen Waverley Rovers | Scoreboard</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <p id="clock">00:00</p>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="row homeTeam">
+      <div class="col-md-6">
+        <p id="homeName">Home</p>
+      </div>
+      <div class="col-md-2">
+        <p class="score" id="homeGoals">0</p>
+        <p>Goals</p>
+      </div>
+      <div class="col-md-2">
+        <p class="score" id="homeBehinds">0</p>
+        <p>Behinds</p>
+      </div>
+      <div class="col-md-2">
+        <p class="score" id="homeTotal">0</p>
+        <p>Total</p>
+      </div>
+    </div>
+    <div class="row awayTeam">
+      <div class="col-md-6">
+        <p id="awayName">Away</p>
+      </div>
+      <div class="col-md-2">
+        <p class="score" id="awayGoals">0</p>
+        <p>Goals</p>
+      </div>
+      <div class="col-md-2">
+        <p class="score" id="awayBehinds">0</p>
+        <p>Behinds</p>
+      </div>
+      <div class="col-md-2">
+        <p class="score" id="awayTotal">0</p>
+        <p>Total</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <p>
+          <button id="homeGoalPlusOne" class="btn btn-secondary">Goal +1</button>
+          <button id="homeGoalTakeOne" class="btn btn-secondary">Goal -1</button>
+          <button id="homeBehindPlusOne" class="btn btn-secondary">Behind +1</button>
+          <button id="homeBehindTakeOne" class="btn btn-secondary">Behind -1</button>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          <button id="awayGoalPlusOne" class="btn btn-secondary">Goal +1</button>
+          <button id="awayGoalTakeOne" class="btn btn-secondary">Goal -1</button>
+          <button id="awayBehindPlusOne" class="btn btn-secondary">Behind +1</button>
+          <button id="awayBehindTakeOne" class="btn btn-secondary">Behind -1</button>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          <button id="startTimer" class="btn btn-secondary">Start</button>
+          <button id="pauseTimer" class="btn btn-secondary">Pause</button>
+          <button id="resetTimer" class="btn btn-danger">Reset Timer</button>
+          <button id="resetScore" class="btn btn-danger">Reset Score</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/scoreboard.js"></script>
+
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/js/mustache.min.js"></script>
+  <script src="/js/moment.min.js"></script>
+  <!-- <script src="/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
