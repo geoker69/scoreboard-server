@@ -10,7 +10,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 const port = process.env.PORT || 3000;
-let game = new Game('Jeremy','George');
+let game = new Game('Glen Waverley Rovers','Visiting Team');
 
 let timerOptions = {
   refreshRateMS: 1000		// How often the clock should be updated - 1 second
