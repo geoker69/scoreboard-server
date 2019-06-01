@@ -23,6 +23,9 @@ cd ..
 4. Browse to http://your-server-ip-address:4000 or http://your-server-ip-address:4000/admin.html
 5. You may want to create a script for the client and server webservers to start when the OS boots...
 
+# Screenshot
+![Screenshot](https://github.com/tennantje/scoreboard-server/blob/master/screenshot.png?raw=true)
+
 # License
 Copyright 2019 Jeremy Tennant
 
